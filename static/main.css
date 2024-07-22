@@ -1,0 +1,271 @@
+h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+    line-height: 1.2em;
+    font-weight: 400;
+    text-transform: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+}
+
+.gp-icon svg {
+    height: 1em;
+    width: 1em;
+    top: 0.125em;
+    position: relative;
+    fill: currentColor;
+}
+
+button.menu-toggle {
+    background-color: transparent;
+    flex-grow: 1;
+    border: 0;
+    text-align: center;
+}
+
+.menu-toggle .gp-icon + .mobile-menu {
+    padding-left: 9px;
+}
+
+.menu-toggle {
+    padding: 0 20px;
+    line-height: 60px;
+    margin: 0;
+    font-weight: 400;
+    text-transform: none;
+    font-size: 15px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.main-navigation.toggled .main-nav {
+    flex-basis: 100%;
+    order: 3;
+}
+
+.page div {
+    word-break: keep-all;
+}
+
+.main-navigation.toggled .main-nav > ul {
+    display: block;
+}
+
+.main-navigation .main-nav > ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-navigation.toggled .main-nav li {
+    width: 100%;
+    text-align: left;
+}
+
+li:not(:last-child) {
+    padding-bottom: 15px;
+}
+
+.main-navigation ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    position: relative;
+}
+
+.main-navigation .main-nav ul li a {
+    text-align: center;
+}
+
+.main-navigation .main-nav ul li a,
+.main-navigation .menu-toggle,
+.main-navigation .menu-bar-items {
+    color: var(--contrast);
+}
+
+.main-navigation .main-nav ul li a {
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 60px;
+}
+
+.main-navigation .main-nav ul li a {
+    text-align: center;
+}
+
+.main-navigation a {
+    font-size: 16px;
+    text-align: justify;
+}
+
+.entry-title a,
+.site-branding a,
+a.button,
+.wp-block-button__link,
+.main-navigation a {
+    text-decoration: none;
+}
+
+.main-navigation a {
+    display: block;
+    text-decoration: none;
+    font-weight: 400;
+    text-transform: none;
+    font-size: 15px;
+}
+
+.main-navigation a {
+    font-size: 16px;
+    text-align: justify;
+}
+
+input[id='trigger'] {
+    display: none;
+}
+
+label[for='trigger'] {
+    width: 40px;
+    height: 25px;
+    position: relative;
+    cursor: pointer;
+}
+
+    label[for='trigger'] span {
+        position: absolute;
+        height: 2px;
+        background-color: #000;
+        width: 100%;
+        left: 0;
+        transition: 0.3s;
+    }
+
+        label[for='trigger'] span:nth-child(1) {
+            top: 0;
+        }
+
+        label[for='trigger'] span:nth-child(2) {
+            top: 50%;
+        }
+
+        label[for='trigger'] span:nth-child(3) {
+            top: 100%;
+        }
+
+input[id='trigger']:checked + label[for='trigger'] span:nth-child(1) {
+    top: 50%;
+    transform: rotate(45deg);
+}
+
+input[id='trigger']:checked + label[for='trigger'] span:nth-child(2) {
+    opacity: 0;
+}
+
+input[id='trigger']:checked + label[for='trigger'] span:nth-child(3) {
+    top: 50%;
+    transform: rotate(-45deg);
+}
+
+@media (max-width: 1023px) {
+    .gp-icon {
+        display: block;
+        text-align: left;
+    }
+}
+
+@media (max-width: 1023px) {
+    .icon-menu-bars {
+        height: 60px;
+    }
+}
+
+.logo-area {
+    width: 100%;
+}
+
+@media (min-width: 769px) {
+    .inside-left-sidebar::before {
+        content: '';
+        background-image: url(https://myhomepee.com/wp-content/uploads/2022/12/myhomepee_logo_line.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 200px;
+        height: 80px;
+        display: inline-block;
+        margin-left: 40px;
+        margin-bottom: 10px;
+    }
+}
+
+.inside-article {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@media (min-width: 769px) {
+    .entry-content {
+        padding: 40px;
+    }
+}
+
+.site-main {
+    margin: 20px;
+    margin-right: 0;
+}
+
+.grid-container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+}
+
+.inside-left-sidebar {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.main-nav-left {
+    flex-basis: 100%;
+}
+
+@media (max-width: 768px) {
+    .inside-article {
+        padding: 30px;
+    }
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+.gb-container-0b35cab3 {
+    padding-right: 80px;
+    padding-left: 80px;
+}
+
+    .gb-container-0b35cab3 h3 {
+        padding: 20px 0px 80px 0px;
+        font-size: 1em;
+    }
+
+.widgettitle {
+    font-size: 23px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border-bottom: 2px solid;
+}

@@ -1,0 +1,19 @@
+{% extends 'blog/layout.html'%}
+
+{% block content %}
+  <div class="grid-container">
+    <div class="inside-article">
+      <div class="left-sidebar">{%include 'left_bar.html'%}</div>
+      <div class="container">
+        {% for posts in post_list %}
+          <ul>
+            <li>
+              <a href="{{posts.get_absolute_url}}">{{ posts.title }}</a>
+              <p>{{ posts.content|truncatewords:30 }}</p>
+            </li>
+          </ul>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+{% endblock %}

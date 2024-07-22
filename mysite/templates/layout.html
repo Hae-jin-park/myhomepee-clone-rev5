@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마이홈피닷컴 clone</title>
+
+    <script src="{% static 'jquery-3.7.1.js' %}"></script>
+    <script src="{% static 'common.js' %}"></script>
+    <script src="{% static 'bootstrap-5.0.2-dist/js/bootstrap.min.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'bootstrap-5.0.2-dist/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="{% static 'main.css' %}">
+  </head>
+
+  <body>
+    {% include 'menu_bar.html' %}
+        {% block content %}{% endblock %}
+    <div class="site-footer footer-bar-active footer-bar-align-left">
+      <div id="footer-widgets" class="site footer-widgets">
+        <div class="footer-widgets-container">
+          <div class="inside-footer-widgets">
+            <div class="footer-widget-1">
+
+              <aside id="block-35" class="widget inner-padding widget_block">
+                <h1 class="gb-headline gb-headline-01291f17 gb-headline-text">
+                  <strong>마이홈피닷컴</strong>
+                </h1>
+              </aside>
+              <aside id="block-38" class="widget inner-padding widget_block">
+                <h2 class="gb-headline gb-headline-3e070acd gb-headline-text">세상에 하나 뿐인 나만의 홈페이지</h2>
+              </aside>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="site-info" aria-label="Site" itemtype="https://schema.org/WPFooter" itemscope="">
+        <div class="inside-site-info">
+          <div class="footer-bar">
+            <aside id="block-39" class="widget inner-padding widget_block">
+              <p>
+                Copyright © 2024 마이홈피닷컴. All rights reserved.</p>
+            </aside>
+          </div>
+
+        </div>
+      </footer>
+    </div>
+  </body>
+
+</html>

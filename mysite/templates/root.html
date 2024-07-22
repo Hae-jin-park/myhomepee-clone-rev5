@@ -1,0 +1,82 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="site-content" id="content">
+
+  <div class="content-area" id="primary">
+    <main class="site-main" id="main">
+
+      <article id="post-8" class="post-8 page type-page status-publish has-post-thumbnail" itemtype="https://schema.org/CreativeWork" itemscope="">
+        <div class="inside-article">
+
+          <div class="entry-content" itemprop="text">
+            <div class="wp-block-image">
+              <figure class="aligncenter size-large">
+                <noscript><img decoding="async" src="https://myhomepee.com/wp-content/uploads/2022/12/myhomepee_logo_front_r2.png" alt="alt"></noscript><img decoding="async" src="https://myhomepee.com/wp-content/uploads/2022/12/myhomepee_logo_front_r2.png" alt="" data-src="https://myhomepee.com/wp-content/uploads/2022/12/myhomepee_logo_front_r2.png" loading="lazy" class=" lazyloaded"></figure>
+            </div>
+
+            <div class="gb-container gb-container-c1aaa505">
+
+              <h2 class="gb-headline gb-headline-b22d660c gb-headline-text">
+                <a href="/introduction">INTRODUCTION</a>
+              </h2>
+
+              <h2 class="gb-headline gb-headline-01730d44 gb-headline-text">
+                <a href="/portfolio">PORTFOLIO</a>
+              </h2>
+
+              <h2 class="gb-headline gb-headline-8d8180d8 gb-headline-text">
+                <a href="/blog">BLOG</a>
+              </h2>
+
+              <h2 class="gb-headline gb-headline-23e2925b gb-headline-text">
+                <a href="/contact">CONTACT</a>
+              </h2>
+
+            </div>
+          </div>
+
+        </div>
+        <a href="{% url "portfolio:new_portfolio" %}" class="btn btn-primary">New Portfolio</a>
+      </article>
+    </main>
+  </div>
+
+  {% comment %} <div class="widget-area sidebar is-left-sidebar" id="left-sidebar">
+    <div class="inside-left-sidebar">
+      <div class="gen-sidebar-nav">
+        <nav class="main-navigation grid-container sub-menu-right" id="site-navigation" aria-label="Primary" itemtype="https://schema.org/SiteNavigationElement" itemscope="">
+          <div class="inside-navigation grid-container">
+            <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+              <span class="gp-icon icon-menu-bars">
+                <svg viewbox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                  <path d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z"></path>
+                </svg>
+                <svg viewbox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                  <path d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z"></path>
+                </svg>
+              </span><span class="mobile-menu">Menu</span>
+            </button>
+            <div id="primary-menu" class="main-nav">
+              <ul id="menu-main-menu" class=" menu sf-menu">
+                <li id="menu-item-42" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-42">
+                  <a href="https://myhomepee.com/introduction">INTRODUCTION</a>
+                </li>
+                <li id="menu-item-3441" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3441">
+                  <a href="https://myhomepee.com/portfolio">PORTFOLIO</a>
+                </li>
+                <li id="menu-item-3440" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3440">
+                  <a href="https://myhomepee.com/blog">BLOG</a>
+                </li>
+                <li id="menu-item-3442" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3442">
+                  <a href="https://myhomepee.com/contact">CONTACT</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div> {% endcomment %}
+
+</div>
+{% endblock %}
