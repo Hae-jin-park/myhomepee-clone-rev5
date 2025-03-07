@@ -30,7 +30,7 @@ urlpatterns = [
     path(route="accounts/", view=include("accounts.urls")),
     path(route="", view=include("portfolio.urls")),
     path(route="", view=include("blog.urls")),
-    # path(route="ckeditor/", view=include('ckeditor_uploader.urls')),
+    path(route="ckeditor/", view=include('ckeditor_uploader.urls')),
     # path('tinymce/',include('tinymce.urls')), # new
     
 ]

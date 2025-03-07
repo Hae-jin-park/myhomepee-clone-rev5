@@ -5,14 +5,18 @@
     <div class="inside-article">
       <div class="left-sidebar">{%include 'left_bar.html'%}</div>
       <div class="container">
-        {% for posts in post_list %}
-          <ul>
-            <li>
-              <a href="{{posts.get_absolute_url}}">{{ posts.title }}</a>
-              <p>{{ posts.content|truncatewords:30 }}</p>
-            </li>
-          </ul>
-        {% endfor %}
+
+        <div class="entry-content" itemprop="text">
+          <h2 class="wp-block-heading widgettitle">BLOG</h2>
+          {% for posts in post_list %}
+            <ul>
+              <li>
+                <a href="{{posts.get_absolute_url}}">{{ posts.title }}</a>
+                <p>{{ posts.category}}</p>
+              </li>
+            </ul>
+          {% endfor %}
+        </div>
       </div>
     </div>
   </div>

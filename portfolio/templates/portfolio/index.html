@@ -3,17 +3,18 @@
 {% block content %}
 
   <div class="grid-container">
-      <div class="inside-article">
-          <div class="left-sidebar">{%include 'left_bar.html'%}</div>
-
-          <div class="entry-content" itemprop="text">
-              <h2 class="wp-block-heading widgettitle">PORTFOLIO</h2>
-              <div class="gb-container-0b35cab3">
-                  {% for portfolio in pp_list %}
-                    {% include "portfolio/_pp_card.html" %}
-                  {% endfor %}
-              </div>
+    <div class="inside-article">
+      <div class="left-sidebar">{%include 'left_bar.html'%}</div>
+      <div class="container">
+        <div class="entry-content" itemprop="text">
+          <h2 class="wp-block-heading widgettitle">PORTFOLIO</h2>
+          <div class="gb-container-0b35cab3">
+            {% for portfolio in pp_list %}
+              {% include "portfolio/_pp_card.html" %}
+            {% endfor %}
           </div>
+        </div>
       </div>
+    </div>
   </div>
 {% endblock %}

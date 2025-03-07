@@ -58,12 +58,12 @@ INSTALLED_APPS = [
     "debug_toolbar",
     "django_bootstrap5",
     "django_extensions",
-    # "ckeditor_uploader",
-    # "ckeditor",
+    "ckeditor_uploader",
+    "ckeditor",
     # "tinymce",
     # # Local Apps
-    "introduction",
     "accounts",
+    "introduction",
     "blog",
     "portfolio",
 ]
@@ -160,8 +160,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-# CKEDITOR_UPLOAD_PATH = 'uploads/'
-# CKEDITOR_IMAGE_BACKEND = "pillow"
+CKEDITOR_UPLOAD_PATH = 'uploads/'
+CKEDITOR_IMAGE_BACKEND = "pillow"
 # CKEDITOR_RESTRICT_BY_USER = True
 STATIC_URL = "/static/"
 STATICFILES_DIRS = [os.path.join(BASE_DIR, "mysite", "static")]
